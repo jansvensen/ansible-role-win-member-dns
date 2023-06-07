@@ -7,4 +7,4 @@
 
 - name: Configure DNS
   ansible.windows.win_powershell:
-    script: files/configure-dns.ps1 --dns_client_adapter "{{ dns_client_adapter }} --dns_client_dns_server_ip "{{ dns_client_dns_server_ip }}"
+    script: files/configure-dns.ps1 --dns_client_adapter "{{ dns_client_adapter }}" --dns_client_dns_server_ip "{{ dns_client_dns_server_ip }}"
