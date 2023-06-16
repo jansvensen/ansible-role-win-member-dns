@@ -9,3 +9,5 @@ $Subnet = $IP.split(".")[0] + "." + $IP.split(".")[1] + "." + $IP.split(".")[2]+
 $DNSServer = $Subnet + $dns_client_dns_server_ip
 
 netsh interface ipv4 set dnsservers "Ethernet" static $DNSServer
+
+write-output "netsh interface ipv4 set dnsservers "Ethernet" static $DNSServer" >c:\log.txt
